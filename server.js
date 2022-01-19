@@ -6,7 +6,7 @@ const Document = require("./models/document.js");
 
 // Mongoose
 mongoose
-  .connect("mongodb://localhost/wastebin", {
+  .connect(process.env.CONNECTION_STRING, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   })
